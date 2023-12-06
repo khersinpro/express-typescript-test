@@ -7,7 +7,7 @@ const config = require(__dirname + '/config/config.js');
 const db: any = {};
 
 let sequelize: any;
-console.log(config);
+console.log(config, 'test');
 
 sequelize = new Sequelize(config);
 
