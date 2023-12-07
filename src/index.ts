@@ -17,6 +17,8 @@ app.listen(port, async () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
 
+
 database.sequelize.sync().then(() => {
+  console.log('models', database.models);
   console.log(`⚡️[server]: Database is running at ${process.env.DB_HOST}`);
 });
